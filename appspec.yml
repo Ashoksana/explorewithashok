@@ -3,6 +3,8 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
+  - source: /ashok.png
+    destination: /var/www/html/
 hooks:
   ApplicationStop:
     - location: scripts/application-stop.sh
@@ -28,4 +30,3 @@ hooks:
     - location: scripts/validate-service.sh
       timeout: 60
       runas: root
-
